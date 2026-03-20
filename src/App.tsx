@@ -17,9 +17,17 @@ function App() {
   
   return (
    <div className='container py-5'>
-    <h1>Buscador de tareas</h1>
-    <SearchBar value={search} onChange={setSearch} />
-    <TaskList tasks={filteredTasks}/>
+    <div className='row justify-content-center'>
+      <div className='col-12 col-md-8 col-lg-6'>
+        <div className='card shadow-sm'>
+          <div className='card-body'>
+            <h1 className='card-title mb-4'>Buscador de tareas</h1>
+            <SearchBar value={search} onChange={setSearch} />
+            <TaskList tasks={filteredTasks}/>
+          </div>
+        </div>
+      </div>
+    </div>
    </div>
   )
 }
